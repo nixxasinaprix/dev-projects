@@ -6,12 +6,25 @@
     <title>Navigation Bar Variations</title>
 
     <style>
+
+      .heading{
+        align-self: center;
+        color: #eb7201;
+        font-style: oblique;
+        padding: 5px;
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
       body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 20px;
-        background-color: #258a1a;
+        background-color: #000a22;
         color: #fff;
+        
       }
       .nav-container {
         margin-bottom: 40px;
@@ -20,7 +33,7 @@
         margin-bottom: 10px;
       }
       .nav1 {
-        background-color: #eaeaea;
+        background-color: #f516f1;
         padding: 10px;
       }
       .nav1 ul {
@@ -36,10 +49,11 @@
       }
       .nav1 a {
         text-decoration: none;
-        color: #202020;
-        /* background-color: #d45b04; */
+        color: #12086a;
+        background-color: #d45b04;
         padding: 5px 15px;
         position: relative;
+        border:2px solid black;
       }
 
       .nav1 a::after {
@@ -49,7 +63,7 @@
         width: 100%;
         bottom: 0;
         left: 0;
-        background-color: #082749;
+        background-color: #1a08a3;
         transform: scaleX(0);
         transition: transform 0.3s ease-in-out;
       }
@@ -58,15 +72,17 @@
       }
 
       .nav1 .login-btn {
-        background-color: #566dd6;
-        color: #fff;
-        border: none;
+        background-color: #eb7201;
+        color: #3c1290;
+        border: 8px;
         padding: 5px 15px;
         border-radius: 5px;
         cursor: pointer;
+        border-radius: 3px;
+        border:solid;
       }
       .nav2 {
-        background-color: #08d982;
+        background-color: #7f0404;
         width: 200px;
         padding: 20px;
       }
@@ -82,11 +98,18 @@
         text-decoration: none;
         color: #fff;
         display: block;
-        padding: 10px;
-        width: 100%;
+        padding: 8px;
+        width: 90%;
+        text-align: center;
+        border: #7f0404;
+        border: 2px solid blueviolet;  /* add this */
+        border-radius: 5px;  
+        background-color:#112553;
+
       }
+         
       .nav2 a:hover {
-        background-color: #062b03;
+        background-color: #5f0519;
       }
       .nav2 .login-btn {
         background-color: #02280e;
@@ -98,7 +121,7 @@
         border-radius: 5px;
       }
       .nav3 {
-        background-color: #45a2bb;
+        background-color: hsl(302, 86%, 47%);
         padding: 10px;
       }
       .nav3 ul {
@@ -114,6 +137,10 @@
         color: #fff;
         padding: 10px;
         display: block;
+        border: 2px solid black;
+        border-radius: 5px;
+        color:black;
+        background-color: #7f0404;
       }
       .nav3 .dropdown-content {
         display: none;
@@ -137,6 +164,11 @@
     </style>
   </head>
   <body>
+    <div>
+      <header>
+        <h1 class="heading">THIS IS A FILE WHICH CONSISTS OF TEMPLATE FOR LOGIN PAGES OR TASKBARS WITH CODE INCLUDED AND CSS DONE IN VARIOUS STYLES</h1>
+      </header>
+    </div>
     <div class="nav-container">
       <h2>Variation 1: Horizontal with underline effect</h2>
       <nav class="nav1">
@@ -153,7 +185,7 @@
       <h2>Variation 2: Vertical with hover effect</h2>
       <nav class="nav2">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="home">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Products</a></li>
         </ul>
